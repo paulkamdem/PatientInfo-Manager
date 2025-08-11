@@ -9,7 +9,6 @@ import java.util.Date;
 @RequiredArgsConstructor
 public class Patient {
     //Patientenliste anzeigen (Name, Geburtsdatum, Geschlecht, etc…)
-    private long patientId;
     private String name;
     private Date birthDate;
     private Gender gender;

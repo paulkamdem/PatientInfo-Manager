@@ -1,9 +1,11 @@
 package com.pohlig.patientmanager.model;
 
+import lombok.Getter;
+
+@Getter
 public enum Gender {
     MALE("Male"),
     FEMALE("Female"),
-    NON_BINARY("Non-binary"),
     OTHER("Other");
 
     private final String label;
@@ -12,7 +14,4 @@ public enum Gender {
         this.label = label;
     }
 
-    public String getLabel() {
-        return label;
-    }
 }
