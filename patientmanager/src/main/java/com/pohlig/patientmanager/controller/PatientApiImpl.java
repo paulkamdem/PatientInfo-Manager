@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class PatientApiImpl implements PatientApi{
 
-    private PatientService service;
+    private final PatientService service;
     @Override
     public String testApi() {
         return "PatientManager Api works well";
