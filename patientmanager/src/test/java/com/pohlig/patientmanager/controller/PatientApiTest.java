@@ -5,6 +5,7 @@ import com.pohlig.patientmanager.model.Gender;
 import com.pohlig.patientmanager.model.Patient;
 import com.pohlig.patientmanager.service.PatientService;
 import org.hamcrest.MatcherAssert;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.junit.jupiter.api.Test;
@@ -12,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
@@ -20,6 +22,7 @@ import java.util.Date;
 import static org.hamcrest.Matchers.*;
 
 @WebMvcTest(PatientApiImpl.class)
+@RunWith(SpringJUnit4ClassRunner.class)
 public class PatientApiTest {
 
     @Autowired
